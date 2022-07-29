@@ -14,5 +14,11 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
+        $this->run([
+            UserSeeder::class,
+            TournamentSeeder::class,
+            GameSeeder::class,
+            LeaderboardSeeder::class,
+        ]);
     }
 }
